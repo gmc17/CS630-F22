@@ -51,10 +51,12 @@ Now that you know each individual piece (or *unit*) of the function works, you'r
 
 ## Why unit testing is an essential practice
 
-The main reason to use unit testing is because it allows for bugs to be easily located. Since units are *isolated*, if a function doesn't pass a unit test, the function is bugged! And, of course, it's easier to find a bug in one function than to find a bug in 20 functions!
+The main reason to use unit testing is because it allows for bugs to be easily located. Since units are *isolated*, if a unit doesn't pass a test, that unit is bugged! And, of course, it's easier to find a bug in one unit (a mere class, function, line, etc.) than to find a bug in an entire, messy program!
 
-Furthermore, by focusing on small sections of code, it's easier to test code thoroughly. Testing large, complex blocks of code is difficult. There can be many edge cases and weird behaviors that arise. But it's easy to test small sections of code, as their behavior is less complex. Moreover, once you test each unit, you can be sure the code works as a whole!
+Furthermore, by focusing on small sections of code, it's easier to test code thoroughly. Testing large, complex blocks of code is difficult. There can be many edge cases and weird behaviors that arise with complexity. But it's easy to test small sections of code, as their behavior is simpler. And once you test each unit, you can be sure the code works as a whole!
 
 Finally, with unit testing, one can write tests as they go. This way, bugs can be caught early and fixed before they become deeply ingrained in the code. 
+
+Overall, unit testing is the superior way of testing code. Whether working alone on a simple program or workingo in large teams on complex projects, mistakes are inevitable and organization is difficult. This is why it's crucial to use unit testing to keep code clean and green!
 
 [^1]: https://smartbear.com/learn/automated-testing/what-is-unit-testing/
