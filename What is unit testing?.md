@@ -60,5 +60,4 @@ Next, by focusing on small sections of code, it's easier to test code thoroughly
 
 Finally, with unit testing, one can write tests as they go. This way, bugs can be caught early and fixed before they become deeply ingrained in the code. 
 
-## Sources
 [^1]: https://smartbear.com/learn/automated-testing/what-is-unit-testing/
