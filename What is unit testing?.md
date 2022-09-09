@@ -9,7 +9,7 @@ Unit testing breaks up code into the smallest possible testable pieces (usually 
 
 The idea of using unit testing is that if bugs are found, their location is known to high precision. Instead of knowing there's an bug *somewhere* in, say, 500 lines of code, this bug would be known to be in a small class, function, or even a specific line. This makes it much easier to catch and fix bugs.
 
-## Example 1
+## Example
 
 Imagine you want to use python to manage students' schedules. Your program aims to take in a student's name and output an image of their weekly schedule. But when you complete the program and try to compile it, you get an error message. With so many different functions, you're not even sure where to start looking. 
 
@@ -28,11 +28,27 @@ def get_active_periods(dict):
         if dict[i] != ""
         result.append(i)
     return result
-
-
 ```
 
-## Example 2
+You test this function like follows:
+
+```python
+def main():
+    # test 1
+    if get_active_periods({1: "Math") != [1]:
+        print("test 1 unsuccessful!")
+    
+    # test 2
+    if get_active_periods({1: "Math", 2: "Bio", 3: "English", 5: "Chem"}) != [1, 2, 3, 5]:
+        print("test 2 unsuccessful!")
+        
+    # test 3
+    if get_active_periods({1: "Math", 2: "Bio", 3: "English", 4: "Spanish", 5: "Chem", 6: "History", 7: "Physics"}) != [1, 2, 3, 4, 5, 6, 7]:
+        print("test 3 unsuccessful!")
+```
+You find that test 1 and test 2 are unsuccessful. So the bug is in this function!
+
+Upon further inspection, you realize it was because the line "if dict[i] != """ accesses a key in the dictionary which may not exist. Now, you fix the bug and move on. You write unit tests for the rest of your functions and classes, and they all pass. 
 
 ## Why unit test?
 
