@@ -13,14 +13,12 @@ The reason to use unit testing is that if bugs are found, their location is know
 
 Imagine you want to use python to manage students' schedules. Your program aims to take in a student's name and output an image of their weekly schedule. But when you complete the program and try to compile it, you get an error message. With so many different functions, you're not even sure where to start looking. 
 
-So, you decide to use unit testing on each of your functions. The first few functions you test work fine according to your tests...
+So, you decide to use unit testing on each of your functions. The first few functions you test work fine according to your tests.
 
-But then, you get to the function called "get_active_periods". 
+But then, you get to the function called "get_active_periods". It should take in a dictionary like {1: "Math", 2: "Bio", 3: "English", 5: "Chem"}, and return a list of the periods of those classes, [1, 2, 3, 5] in this case.
 
 ```python
-# takes in dictionary relating periods to their subjects, returns list of periods that student has classes in.
-# e.g. input of {1: "Math", 2: "Bio", 3: "English", 5: "Chem"} should yield output of [1, 2, 3, 5], as the 
-# student has classes in periods 1, 2, 3, and 5.
+# Input of {1: "Math", 2: "Bio", 3: "English", 5: "Chem"} should yield output of [1, 2, 3, 5], as the student has classes in periods 1, 2, 3, and 5.
 
 def get_active_periods(dict): 
     result = []
