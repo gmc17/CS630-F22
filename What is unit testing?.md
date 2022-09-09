@@ -18,11 +18,18 @@ So, you decide to use unit testing on each of your functions. The first few func
 But then, you get to the function called "get_active_periods". 
 
 ```python
-// Takes in dictionary relating periods to their subjects, returns list of periods that student has classes in.
-// e.g. input of {1: "Math", 2: "Bio", 3: "English", 4: "Chem"}
+# takes in dictionary relating periods to their subjects, returns list of periods that student has classes in.
+# e.g. input of {1: "Math", 2: "Bio", 3: "English", 5: "Chem"} should yield output of [1, 2, 3, 5], as the 
+# student has classes in periods 1, 2, 3, and 5.
 
 def get_active_periods(dict): 
-    
+    result = []
+    for i in range(8):
+        if dict[i] != ""
+        result.append(i)
+    return result
+
+
 ```
 
 ## Example 2
