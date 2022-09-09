@@ -11,12 +11,14 @@ The idea of using unit testing is that if bugs are found, their location is know
 
 ## Example 1
 
-Imagine you want to use python to create a simple neural network from scratch. You run your code and are met with an error message. There are 20 different functions, a few different classes, and you don't even know where to start looking for this error!
+Imagine you want to use python to manage students' schedules. Your program aims to take in a student's name and output an image of their weekly schedule. But when you complete the program and try to compile it, you get an error message. With so many different functions, you're not even sure where to start looking. 
 
-So, you 
+So, you decide to use unit testing on each of your functions. The first few functions you test work fine according to your tests...
+
+But then, you get to the function called "get_active_periods". 
 
 ```python
-print("Helo world!")
+def get_active_periods(d)
 ```
 
 ## Example 2
