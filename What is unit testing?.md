@@ -30,7 +30,7 @@ def get_active_periods(dict):
     return result
 ```
 
-You test this function like follows:
+You test the function by comparing expected outputs to actual outputs:
 
 ```python
 def main():
@@ -46,9 +46,11 @@ def main():
     if get_active_periods({1: "Math", 2: "Bio", 3: "English", 4: "Spanish", 5: "Chem", 6: "History", 7: "Physics"}) != [1, 2, 3, 4, 5, 6, 7]:
         print("test 3 unsuccessful!")
 ```
-You find that test 1 and test 2 are unsuccessful. So the bug is in this function! You know the location of the bug (or at least, *one of the bugs*) now!
+You find that test 1 and test 2 are unsuccessful. So, there's a bug is in this function! You know the location of your program's bug (or at least, *one of the bugs*) now!
 
-Upon further inspection, you realize it was because the line ```if dict[i] != ""``` accesses a key in the dictionary which may not exist. Now, you fix the bug and move on. You write unit tests for the rest of your functions and classes, and they all pass. 
+Upon further inspection, you realize it was because the line ```if dict[i] != ""``` accesses a key in the dictionary which may not exist. Now, you fix the bug and move on. You write unit tests for the rest of your functions and classes and they all pass. 
+
+Now that you know each individual piece (or *unit*) of the function works, you're confident the program will work as a whole. You click "run" and the program works just as you'd hoped.
 
 ## Why unit test?
 
