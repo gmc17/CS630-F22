@@ -11,6 +11,10 @@ The idea of using unit testing is that if bugs are found, their location is know
 
 ## Example 1
 
+Imagine you want to use python to create a simple neural network from scratch. You run your code and are met with an error message. There are 20 different functions, a few different classes, and you don't even know where to start looking for this error!
+
+So, you 
+
 ```python
 print("Helo world!")
 ```
