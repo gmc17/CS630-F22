@@ -5,9 +5,9 @@ Dr. Zufelt \
 ## What is unit testing?
 Simply put -- unit testing is a method for testing software.
 
-Unit testing breaks up code into the smallest possible testable pieces, called 'units'. Units are often classes, functions, or even just lines of code. Importantly, units must be isolated -- that is, they must not rely on external systems like databases, file systems, networks, or system configurations.[^1]
+Unit testing breaks up code into the smallest possible testable pieces (usually classes, functions, or individual lines), called 'units'. Importantly, units must be isolated -- that is, they must not rely on external systems like databases, file systems, networks, or system configurations.[^1]
 
-By using unit testing, if/when errors are found, we know their location to high precision
+The idea of using unit testing is that if errors are found, their location is known to high precision. Instead of knowing there's an error *somewhere* in 500 lines of code, the location of this error would be known to be in a small class, function, or even a specific line. This makes it easy to catch and fix bugs.
 
 ## Example 1 --
 
