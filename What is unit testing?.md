@@ -18,7 +18,11 @@ So, you decide to use unit testing on each of your functions. The first few func
 But then, you get to the function called "get_active_periods". 
 
 ```python
-def get_active_periods(d)
+// Takes in dictionary relating periods to their subjects, returns list of periods that student has classes in.
+// e.g. input of {1: "Math", 2: "Bio", 3: "English", 4: "Chem"}
+
+def get_active_periods(dict): 
+    
 ```
 
 ## Example 2
