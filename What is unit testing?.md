@@ -25,8 +25,8 @@ But then, you get to the function called "get_active_periods".
 def get_active_periods(dict): 
     result = []
     for i in range(8):
-        if dict[i] != ""
-        result.append(i)
+        if dict[i] != "":
+            result.append(i)
     return result
 ```
 
@@ -46,9 +46,9 @@ def main():
     if get_active_periods({1: "Math", 2: "Bio", 3: "English", 4: "Spanish", 5: "Chem", 6: "History", 7: "Physics"}) != [1, 2, 3, 4, 5, 6, 7]:
         print("test 3 unsuccessful!")
 ```
-You find that test 1 and test 2 are unsuccessful. So the bug is in this function!
+You find that test 1 and test 2 are unsuccessful. So the bug is in this function! You know the location of the bug (or at least, *one of the bugs*) now!
 
-Upon further inspection, you realize it was because the line "if dict[i] != """ accesses a key in the dictionary which may not exist. Now, you fix the bug and move on. You write unit tests for the rest of your functions and classes, and they all pass. 
+Upon further inspection, you realize it was because the line ```if dict[i] != ""``` accesses a key in the dictionary which may not exist. Now, you fix the bug and move on. You write unit tests for the rest of your functions and classes, and they all pass. 
 
 ## Why unit test?
 
